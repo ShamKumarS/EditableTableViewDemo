@@ -7,6 +7,7 @@ Welcome to the EditableTableViewDemo App, an iOS application that shows the impl
 <p align="center">
   <img src="Media/1.png" width="200">
   <img src="Media/2.png" width="200">
+  <img src="Media/3.png" width="200">
 </p>
 
 ## MVC Architecture

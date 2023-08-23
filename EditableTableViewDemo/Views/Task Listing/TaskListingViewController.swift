@@ -74,6 +74,7 @@ class TaskListingViewController: BaseViewController {
         guard let tag = sender.view?.tag else { return }
         taskListingViewModel.taskListingData[tag].isSelected = !taskListingViewModel.taskListingData[tag].isSelected
         totalSelected = taskListingViewModel.getNumberOfSelected()
+        inEditMode = totalSelected > 0
         taskListingView.tableView.reloadData()
     }
     
