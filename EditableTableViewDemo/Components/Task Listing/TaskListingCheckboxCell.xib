@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamBold.ttf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="TaskListingCheckboxCell" rowHeight="45" id="CEe-yf-yjs" customClass="TaskListingCheckboxCell" customModule="Driven_Day" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="576" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CEe-yf-yjs" id="AlZ-aW-Gkp">
+                <rect key="frame" x="0.0" y="0.0" width="576" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-0V-5Q8" userLabel="Custom Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="576" height="20"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tMI-IR-WBM">
+                                <rect key="frame" x="0.0" y="3.5" width="15" height="12.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="6Sv-Ta-k0i"/>
+                                    <constraint firstAttribute="height" constant="15" id="cPe-4s-1GM"/>
+                                    <constraint firstAttribute="width" secondItem="tMI-IR-WBM" secondAttribute="height" multiplier="1:1" id="dv7-Fh-V87"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Te6-qc-aIF" userLabel="Title">
+                                <rect key="frame" x="23" y="3.5" width="31" height="13"/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="11"/>
+                                <color key="textColor" name="Jet Grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JJj-Sa-ovP"/>
+                            <constraint firstItem="Te6-qc-aIF" firstAttribute="leading" secondItem="tMI-IR-WBM" secondAttribute="trailing" constant="8" id="O2c-x1-OeI"/>
+                            <constraint firstItem="tMI-IR-WBM" firstAttribute="centerY" secondItem="Te6-qc-aIF" secondAttribute="centerY" id="RdL-6S-GXd"/>
+                            <constraint firstItem="Te6-qc-aIF" firstAttribute="centerY" secondItem="hwY-0V-5Q8" secondAttribute="centerY" id="ajZ-ws-Sbp"/>
+                            <constraint firstItem="tMI-IR-WBM" firstAttribute="leading" secondItem="hwY-0V-5Q8" secondAttribute="leading" id="vF7-aM-DOP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hwY-0V-5Q8" secondAttribute="trailing" id="1PB-Dj-KUH"/>
+                    <constraint firstAttribute="bottom" secondItem="hwY-0V-5Q8" secondAttribute="bottom" id="2en-WK-Hrj"/>
+                    <constraint firstItem="hwY-0V-5Q8" firstAttribute="leading" secondItem="AlZ-aW-Gkp" secondAttribute="leading" id="AcM-Zv-b0T"/>
+                    <constraint firstItem="hwY-0V-5Q8" firstAttribute="centerY" secondItem="AlZ-aW-Gkp" secondAttribute="centerY" id="gVu-M6-AxZ"/>
+                    <constraint firstItem="hwY-0V-5Q8" firstAttribute="top" secondItem="AlZ-aW-Gkp" secondAttribute="top" id="zxn-eD-cus"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" notEnabled="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="checkboxImage" destination="tMI-IR-WBM" id="SOT-SK-yfK"/>
+                <outlet property="customContentView" destination="hwY-0V-5Q8" id="uXe-wZ-mXK"/>
+                <outlet property="titleLabel" destination="Te6-qc-aIF" id="Lnj-A8-nAe"/>
+            </connections>
+            <point key="canvasLocation" x="-592.75362318840587" y="-313.72767857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <namedColor name="Jet Grey">
+            <color red="0.36500000953674316" green="0.40799999237060547" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

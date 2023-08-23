@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.595" height="12.595" viewBox="0 0 12.595 12.595">
+  <g id="Group_163827" data-name="Group 163827" transform="translate(-210 -434.905)">
+    <g id="Checkbox" transform="translate(210 434.905)">
+      <g id="Group_164265" data-name="Group 164265">
+        <rect id="1" data-name="Rectangle 1513" width="12.595" height="12.595" rx="3" fill="#738ad4"/>
+        <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M2.481,9.917.107,7.543a.365.365,0,0,1,0-.516L.623,6.51a.365.365,0,0,1,.516,0l1.6,1.6L6.164,4.684a.365.365,0,0,1,.516,0L7.2,5.2a.365.365,0,0,1,0,.516L3,9.917A.365.365,0,0,1,2.481,9.917Z" transform="translate(2.646 -1.003)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

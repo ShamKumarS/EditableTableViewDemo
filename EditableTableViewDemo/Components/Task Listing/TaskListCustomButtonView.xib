@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MontserratMedium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskListCustomButtonView" customModule="Driven_Day" customModuleProvider="target">
+            <connections>
+                <outlet property="checkboxImage" destination="Kby-yg-9IG" id="fiU-q9-GSK"/>
+                <outlet property="titleLabel" destination="t4T-S0-egj" id="vEv-Dz-Z4p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MQM-sP-rGE">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Kby-yg-9IG">
+                    <rect key="frame" x="0.0" y="98" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="bfc-8U-qxN"/>
+                        <constraint firstAttribute="width" constant="16" id="og4-BZ-SmO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4T-S0-egj" userLabel="Title">
+                    <rect key="frame" x="22" y="98.5" width="401" height="15"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" name="Monsoon"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4fl-qC-9ls"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="t4T-S0-egj" firstAttribute="centerY" secondItem="MQM-sP-rGE" secondAttribute="centerY" id="0Fc-vr-i77"/>
+                <constraint firstItem="Kby-yg-9IG" firstAttribute="leading" secondItem="4fl-qC-9ls" secondAttribute="leading" id="Bet-w3-g17"/>
+                <constraint firstItem="t4T-S0-egj" firstAttribute="leading" secondItem="Kby-yg-9IG" secondAttribute="trailing" constant="6" id="LFB-5o-KXe"/>
+                <constraint firstItem="Kby-yg-9IG" firstAttribute="centerY" secondItem="MQM-sP-rGE" secondAttribute="centerY" id="fYV-rj-N5V"/>
+                <constraint firstItem="4fl-qC-9ls" firstAttribute="trailing" secondItem="t4T-S0-egj" secondAttribute="trailing" id="ghl-gJ-6lN"/>
+                <constraint firstItem="Kby-yg-9IG" firstAttribute="centerY" secondItem="t4T-S0-egj" secondAttribute="centerY" id="sM5-bb-9Qg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="22.463768115942031" y="412.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emptyRectangle" width="15.5" height="15.5"/>
+        <namedColor name="Monsoon">
+            <color red="0.51764705882352946" green="0.50588235294117645" blue="0.58039215686274515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

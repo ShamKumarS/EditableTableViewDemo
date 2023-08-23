@@ -1,0 +1,32 @@
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+<<<<<<< HEAD
+          "blue" : "0.945",
+          "green" : "0.949",
+          "red" : "0.965"
+=======
+<<<<<<< HEAD:Driven-Day/Resources/Colors.xcassets/Clay Brown.colorset/Contents.json
+          "blue" : "0.259",
+          "green" : "0.447",
+          "red" : "0.678"
+=======
+          "blue" : "0.945",
+          "green" : "0.949",
+          "red" : "0.965"
+>>>>>>> milestone1:Driven-Day/Resources/Colors.xcassets/Fantasy.colorset/Contents.json
+>>>>>>> milestone1
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
